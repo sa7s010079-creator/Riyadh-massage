@@ -1,181 +1,306 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مساج منزلي الرياض | جلسات احترافية تصلك أينما كنت</title>
+  <title>مساج منزلي الرياض VIP | جلسات استرخاء وعلاج فندقية في منزلك</title>
   
-  <!-- تصحيح رابط الـ Canonical -->
-  <link rel="canonical" href="https://googlef87d57d459343762.vercel.app/">
-  <meta name="description" content="أفضل خدمات المساج المنزلي في الرياض. جلسات استرخائية وعلاجية وسويدية بأيدي مختصين تصل إلى منزلك بكل خصوصية وراحة.">
-  
-  <!-- Tailwind CSS CDN -->
+  <link rel="canonical" href="https://sa7s010079-creator.github.io/Riyadh-massage/">
+  <meta name="description" content="خدمة المساج المنزلي والفندقي الأرقى داخل مدينة الرياض. طاقم احترافي، زيوت عضوية طبيعية، خصوصية تامة، وأحدث تقنيات الاسترخاء تصل إلى باب بيتك.">
+
+  <!-- Tailwind CSS & Font Awesome -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- خط تجوال من Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   
   <style>
     body {
       font-family: 'Tajawal', sans-serif;
     }
+    .luxury-gold-gradient {
+      background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    }
+    .hero-bg {
+      background: radial-gradient(circle at top, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0) 70%), #ffffff;
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-600 selection:text-white">
 
-  <!-- شريط التنقل العلوي -->
-  <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-2 font-extrabold text-xl text-slate-900">
-        <span class="w-3 h-3 rounded-full bg-amber-600"></span>
-        مساج منزلي الرياض
+  <!-- شريط إعلاني علوي ترويجي -->
+  <div class="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-800 text-white text-xs sm:text-sm py-2 px-4 text-center font-bold tracking-wide shadow-inner flex items-center justify-center gap-2">
+    <span class="inline-block animate-bounce">✨</span>
+    <span>عرض خاص بمناسبة الإطلاق: خصم مميز على جلسات المساج الـ VIP المنزلية داخل جميع أحياء الرياض!</span>
+  </div>
+
+  <!-- شريط التنقل (Navbar) -->
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white shadow-md shadow-amber-600/30">
+          <i class="fa-solid fa-spa text-xl"></i>
+        </div>
+        <div>
+          <span class="text-xl font-black text-slate-900 tracking-tight block">مساج الرياض VIP</span>
+          <span class="text-[11px] text-amber-600 font-bold block -mt-1">خدمات منزلية وفندقية راقية</span>
+        </div>
       </div>
-      <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AC%20%D9%85%D9%86%D8%B2%D9%84%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" 
-         target="_blank" rel="noopener" 
-         class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-4 py-2 rounded-xl transition flex items-center gap-2 shadow-sm">
-        <span>واتساب</span>
-      </a>
+
+      <div class="hidden md:flex items-center gap-8 font-bold text-sm text-slate-700">
+        <a href="#services" class="hover:text-amber-600 transition">خدماتنا</a>
+        <a href="#features" class="hover:text-amber-600 transition">لماذا تختارنا</a>
+        <a href="#packages" class="hover:text-amber-600 transition">الباقات والأسعار</a>
+        <a href="#steps" class="hover:text-amber-600 transition">كيفية الحجز</a>
+        <a href="#faq" class="hover:text-amber-600 transition">الأسئلة الشائعة</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AC%20%D9%85%D9%86%D8%B2%D9%84%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" 
+           target="_blank" rel="noopener" 
+           class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-extrabold px-5 py-2.5 rounded-xl transition flex items-center gap-2 shadow-lg shadow-emerald-600/20 hover:scale-[1.02]">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>حجز سريع عبر واتساب</span>
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- القسم الرئيسي (Hero Section) -->
-  <header class="py-16 md:py-24 px-4 bg-gradient-to-b from-amber-50/60 to-slate-50 text-center">
-    <div class="max-w-3xl mx-auto">
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold mb-6">
-        <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
-        خدمة مساج منزلي وفندقي داخل الرياض
-      </span>
-      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-        مساج منزلي احترافي في الرياض يصل لباب بيتك
-      </h1>
-      <p class="text-base md:text-lg text-slate-600 leading-relaxed mb-8">
-        استرخِ وتخلص من ضغوط العمل والإجهاد العضلي مع جلسات فندقية راقية بأعلى درجات الخصوصية والتعقيم.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AC%20%D9%85%D9%86%D8%B2%D9%84%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" 
-           target="_blank" rel="noopener"
-           class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2">
-          احجز موعدك الآن عبر واتساب
-        </a>
-        <a href="#services" class="w-full sm:w-auto bg-white border border-slate-200 hover:bg-slate-100 text-slate-800 font-bold px-8 py-4 rounded-xl transition">
-          استكشف الجلسات
-        </a>
+  <!-- القسم الترحيبي الرئيسي (Hero) -->
+  <header class="hero-bg border-b border-slate-200/60 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 text-right">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-xs font-black mb-6">
+          <i class="fa-solid fa-certificate text-amber-600"></i>
+          تجربة سبا 5 نجوم بين يديك داخل منزلك
+        </div>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.2] mb-6">
+          استعد طاقتك وعافيتك مع أرقى <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">مساج منزلي بالرياض</span>
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl font-normal">
+          نصلك أينما كنت داخل الرياض مع سرير المساج المخصص، الزيوت الطبيعية المستوردة، والمناشف المعقمة. تجربة فريدة تجمع بين الاسترخاء العميق وتخفيف آلام وتشنجات العضلات بكل خصوصية واحتراف.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+          <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AC%20%D9%85%D9%86%D8%B2%D9%84%D9%8A" 
+             target="_blank" rel="noopener"
+             class="bg-emerald-600 hover:bg-emerald-700 text-white text-base font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/30 transition flex items-center justify-center gap-3">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span>احجز جلستك الآن مباشرة</span>
+          </a>
+          <a href="#packages" class="bg-white border-2 border-slate-300 hover:border-amber-600 hover:text-amber-600 text-slate-800 font-extrabold px-8 py-4 rounded-xl transition text-center">
+            عرض الأسعار والباقات
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 text-center sm:text-right">
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900">100%</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">خصوصية وسرية تامة</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900">+1,500</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">عميل راضٍ بالرياض</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900">⭐ 4.9</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">تقييم الخدمة الميدانية</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-md rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900">
+          <div class="p-8 text-white text-center flex flex-col items-center justify-center min-h-[420px] bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950">
+            <div class="w-24 h-24 rounded-full bg-amber-500/20 border-2 border-amber-400 flex items-center justify-center mb-6 text-amber-400 text-4xl shadow-inner">
+              <i class="fa-solid fa-hot-tub-person"></i>
+            </div>
+            <span class="text-amber-400 text-xs uppercase tracking-widest font-black mb-2">جلسة فندقية VIP</span>
+            <h3 class="text-2xl font-black mb-3">خدمة منزلية متكاملة لراحتك</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              نصل لباب بيتك بكافة الأدوات المعقمة ذات الاستخدام الواحد وسرير المساج المريح لتعيش تجربة الاسترخاء بدون عناء الزحمة والتنقل.
+            </p>
+            <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg text-xs font-bold text-slate-200">
+              <i class="fa-solid fa-location-dot text-amber-400"></i>
+              تغطية شاملة لكافة أحياء شمال وشرق وغرب وجنوب الرياض
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- الخدمات -->
-  <section id="services" class="py-16 px-4 max-w-6xl mx-auto">
-    <div class="text-center max-w-xl mx-auto mb-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">جلسات مصممة لراحتك التامة</h2>
-      <p class="text-slate-600">نستخدم أفضل الزيوت الطبيعية والمعدات المجهزة لتجربة استرخاء متكاملة.</p>
+  <!-- شريط الميزات السريعة -->
+  <section class="py-8 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-3">
+          <i class="fa-solid fa-shield-halved text-2xl text-amber-600 mb-2"></i>
+          <h4 class="font-extrabold text-slate-900 text-sm">أعلى معايير النظافة والتعقيم</h4>
+          <p class="text-xs text-slate-500 mt-1">أدوات ذات استخدام فردي لكل جلسة</p>
+        </div>
+        <div class="p-3">
+          <i class="fa-solid fa-user-doctor text-2xl text-amber-600 mb-2"></i>
+          <h4 class="font-extrabold text-slate-900 text-sm">أخصائيون محترفون</h4>
+          <p class="text-xs text-slate-500 mt-1">خبرة عالية في تشريح العضلات والتدليك</p>
+        </div>
+        <div class="p-3">
+          <i class="fa-solid fa-bottle-droplet text-2xl text-amber-600 mb-2"></i>
+          <h4 class="font-extrabold text-slate-900 text-sm">زيوت طبيعية وعطرية فاخرة</h4>
+          <p class="text-xs text-slate-500 mt-1">آمنة ومغذية للبشرة وخالية من المواد الكيميائية</p>
+        </div>
+        <div class="p-3">
+          <i class="fa-solid fa-clock text-2xl text-amber-600 mb-2"></i>
+          <h4 class="font-extrabold text-slate-900 text-sm">التزام دقيق بالمواعيد</h4>
+          <p class="text-xs text-slate-500 mt-1">نصلك في التوقيت المحدد دون أي تأخير</p>
+        </div>
+      </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  </section>
+
+  <!-- قائمة الخدمات التفصيلية -->
+  <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-amber-600 font-extrabold text-sm uppercase tracking-wider block mb-2">خدمات راقية مصممة خصيصاً لك</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-4">أنواع الجلسات المتاحة</h2>
+      <p class="text-slate-600 text-base">اختر الجلسة التي يحتاجها جسمك ودع الباقي على خبرائنا المتخصصين.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
-        <h3 class="text-xl font-bold text-slate-900 mb-2">المساج السويدي</h3>
-        <p class="text-slate-600 text-sm mb-4 leading-relaxed">حركات ناعمة وانسيابية لتهدئة الأعصاب، تنشيط الدورة الدموية، وتخفيف توتر الجسم بالكامل.</p>
-        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AC%20%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%AF%D9%8A" target="_blank" rel="noopener" class="text-emerald-600 font-bold text-sm hover:underline">تواصل لمعرفة السعر والحجز ←</a>
+      <!-- الخدمة 1 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 relative flex flex-col justify-between">
+        <span class="absolute top-6 left-6 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-black">الأكثر طلباً</span>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-feather"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">المساج السويدي (Swedish Massage)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            حركات انسيابية متناغمة تعزز تدفق الدورة الدموية، وتزيل التوتر العصبي وتساعد على استعادة توازن الجسم والراحة العامة.
+          </p>
+        </div>
+        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AC%20%D8%B3%D9%88%D9%8A%D8%AF%D9%8A" target="_blank" rel="noopener" class="text-emerald-700 font-extrabold text-sm hover:underline flex items-center gap-2">
+          <span>احجز الجلسة السويدية الآن</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
       </div>
 
-      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
-        <h3 class="text-xl font-bold text-slate-900 mb-2">المساج العلاجي (Deep Tissue)</h3>
-        <p class="text-slate-600 text-sm mb-4 leading-relaxed">يركز على العقد العضلية والأنسجة العميقة لفك التشنجات وتسكين آلام الإجهاد المزمن.</p>
-        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AC%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D8%AC%D9%8A" target="_blank" rel="noopener" class="text-emerald-600 font-bold text-sm hover:underline">تواصل لمعرفة السعر والحجز ←</a>
+      <!-- الخدمة 2 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 relative flex flex-col justify-between">
+        <span class="absolute top-6 left-6 px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200 text-xs font-black">علاجي مركز</span>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-200 text-blue-700 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-hand-fist"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">مساج الأنسجة العميقة (Deep Tissue)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            ضغط عميق ومدروس يستهدف العقد العضلية المتيبسة والتشنجات الناتجة عن الجلوس الطويل أو الرياضة الشديدة لراحة فورية.
+          </p>
+        </div>
+        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%AC%D8%A9%20%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D9%82%D8%A9" target="_blank" rel="noopener" class="text-emerald-700 font-extrabold text-sm hover:underline flex items-center gap-2">
+          <span>احجز جلسة الأنسجة العميقة</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
       </div>
 
-      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
-        <h3 class="text-xl font-bold text-slate-900 mb-2">مساج الاسترخاء والراحة</h3>
-        <p class="text-slate-600 text-sm mb-4 leading-relaxed">مزيج من الزيوت العطرية والتقنيات الهادئة لتصفية الذهن والمساعدة على النوم العميق.</p>
-        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%B3%D8%A7%D8%AC%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1" target="_blank" rel="noopener" class="text-emerald-600 font-bold text-sm hover:underline">تواصل لمعرفة السعر والحجز ←</a>
+      <!-- الخدمة 3 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 relative flex flex-col justify-between">
+        <span class="absolute top-6 left-6 px-3 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-xs font-black">استرخاء كامل</span>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-purple-50 border border-purple-200 text-purple-700 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">مساج الاسترخاء العطري (Aromatherapy)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            مزيج هادئ من الزيوت العطرية النقية (لافندر وإكليل الجبل) يهدئ الجهاز العصبي ويساعد على النوم العميق والتخلص من الأرق.
+          </p>
+        </div>
+        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B9%D8%B7%D8%B1%D9%8A" target="_blank" rel="noopener" class="text-emerald-700 font-extrabold text-sm hover:underline flex items-center gap-2">
+          <span>احجز جلسة الاسترخاء العطري</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
       </div>
 
-      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
-        <h3 class="text-xl font-bold text-slate-900 mb-2">مساج الظهر والرقبة والأكتاف</h3>
-        <p class="text-slate-600 text-sm mb-4 leading-relaxed">مثالي لأصحاب الأعمال المكتبية والقيادة الطويلة لفك تيبس الرقبة وأسفل الظهر.</p>
-        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%B3%D8%A7%D8%AC%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%20%D9%88%D8%A7%D9%84%D8%B1%D9%82%D8%A8%D8%A9" target="_blank" rel="noopener" class="text-emerald-600 font-bold text-sm hover:underline">تواصل لمعرفة السعر والحجز ←</a>
+      <!-- الخدمة 4 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 relative flex flex-col justify-between">
+        <span class="absolute top-6 left-6 px-3 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 text-xs font-black">تخفيف الإجهاد</span>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-chair"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">مساج الظهر والرقبة والأكتاف</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            جلسة مخصصة لمعالجة ضغوط العمل المكتبي، الصداع التوتري، وآلام الفقرات العنقية وأسفل الظهر الناتجة عن قيادة السيارة والمكتب.
+          </p>
+        </div>
+        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%20%D9%88%D8%A7%D9%84%D8%B1%D9%82%D8%A8%D8%A9" target="_blank" rel="noopener" class="text-emerald-700 font-extrabold text-sm hover:underline flex items-center gap-2">
+          <span>احجز جلسة الظهر والرقبة</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
       </div>
 
-      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition md:col-span-2 lg:col-span-2">
-        <h3 class="text-xl font-bold text-slate-900 mb-2">جلسات مخصصة VIP</h3>
-        <p class="text-slate-600 text-sm mb-4 leading-relaxed">جلسة مخصصة وفق رغبتك بالتركيز على مناطق معينة مع أدوات وزيوت عناية خاصة تناسب وقتك وجدولك.</p>
-        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9" target="_blank" rel="noopener" class="text-emerald-600 font-bold text-sm hover:underline">تواصل لمعرفة السعر والحجز ←</a>
+      <!-- الخدمة 5 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 relative flex flex-col justify-between">
+        <span class="absolute top-6 left-6 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-black">حيوية ونشاط</span>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-person-running"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">المساج الرياضي (Sports Massage)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            تحسين مرونة الأوتار وتفكيك حمض اللاكتيك المتراكم لتسريع استشفاء العضلات بعد التمارين الشاقة وممارسة الرياضة.
+          </p>
+        </div>
+        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AC%20%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A" target="_blank" rel="noopener" class="text-emerald-700 font-extrabold text-sm hover:underline flex items-center gap-2">
+          <span>احجز الجلسة الرياضية</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+
+      <!-- الخدمة 6 -->
+      <div class="bg-gradient-to-br from-slate-900 to-amber-950 text-white rounded-2xl p-8 shadow-xl relative flex flex-col justify-between border border-amber-500/30">
+        <span class="absolute top-6 left-6 px-3 py-1 rounded-full bg-amber-500 text-slate-950 text-xs font-black">تجربة VIP كاملة</span>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-white/10 border border-amber-400/40 text-amber-400 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-white mb-3">الجلسة الملكية الشاملة (Royal VIP)</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            مزيج حصري يجمع بين المساج السويدي، الأنسجة العميقة، تدليك القدمين (Reflexology)، مع باقة زيوت ملكية خاصة وتجربة سبا فندقية لا تُنسى.
+          </p>
+        </div>
+        <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9%20VIP" target="_blank" rel="noopener" class="text-amber-400 font-extrabold text-sm hover:underline flex items-center gap-2">
+          <span>احجز الجلسة الملكية عبر واتساب</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
       </div>
 
     </div>
   </section>
 
-  <!-- خطوات الحجز -->
-  <section class="py-16 bg-slate-100/70 border-y border-slate-200/80 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-10">خطوات الحجز بكل سهولة</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-right">
-        <div class="bg-white p-6 rounded-xl border border-slate-200">
-          <span class="text-3xl font-extrabold text-amber-600 block mb-2">01</span>
-          <h4 class="font-bold text-slate-900 mb-1">راسلنا على واتساب</h4>
-          <p class="text-sm text-slate-600">أرسل موقعك ونوع الجلسة المفضلة.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200">
-          <span class="text-3xl font-extrabold text-amber-600 block mb-2">02</span>
-          <h4 class="font-bold text-slate-900 mb-1">تحديد الموعد</h4>
-          <p class="text-sm text-slate-600">نؤكد معك التوقيت المناسب فوراً.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200">
-          <span class="text-3xl font-extrabold text-amber-600 block mb-2">03</span>
-          <h4 class="font-bold text-slate-900 mb-1">وصول الأخصائي</h4>
-          <p class="text-sm text-slate-600">يصلك المختص بكامل التجهيزات لجلسة مريحة.</p>
-        </div>
+  <!-- باقات الأسعار -->
+  <section id="packages" class="py-20 bg-slate-100/70 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-amber-600 font-extrabold text-sm uppercase tracking-wider block mb-2">شفافية كاملة</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-3">باقات الجلسات المنزلية</h2>
+        <p class="text-slate-600">أسعار شاملة التوصيل والخدمة داخل أحياء الرياض بدون أي رسوم خفية.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- تذييل الصفحة (Footer) مع الروابط القانونية المطلوبة لـ Google Ads -->
-  <footer class="bg-slate-900 text-slate-400 py-12 px-4">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 border-b border-slate-800 pb-8 text-center md:text-right">
-      <div>
-        <div class="text-white font-bold text-lg mb-1">مساج منزلي الرياض</div>
-        <p class="text-xs text-slate-500">خدمات استرخاء منزلية وفندقية داخل جميع أحياء مدينة الرياض.</p>
-      </div>
-      <div class="flex flex-wrap justify-center gap-6 text-sm">
-        <a href="https://wa.me/966563702354" target="_blank" rel="noopener" class="hover:text-white transition">واتساب: 0563702354</a>
-        <a href="https://www.instagram.com/riyadh_massage2?igsi=enNwbmM0YTMwbXo1" target="_blank" rel="noopener" class="hover:text-white transition">Instagram</a>
-        <button onclick="document.getElementById('privacyModal').classList.remove('hidden')" class="hover:text-white transition underline">سياسة الخصوصية</button>
-      </div>
-    </div>
-    <div class="max-w-6xl mx-auto pt-6 text-center text-xs text-slate-600">
-      جميع الحقوق محفوظة © مساج منزلي الرياض.
-    </div>
-  </footer>
-
-  <!-- زر واتساب العائم -->
-  <a href="https://wa.me/966563702354?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AC%20%D9%85%D9%86%D8%B2%D9%84%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" 
-     target="_blank" rel="noopener" 
-     aria-label="تواصل عبر واتساب"
-     class="fixed bottom-6 left-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110 flex items-center justify-center">
-    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-    </svg>
-  </a>
-
-  <!-- نافذة سياسة الخصوصية المنبثقة (Modal) لتمرير مراجعة إعلانات جوجل -->
-  <div id="privacyModal" class="hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
-    <div class="bg-white w-full max-w-lg rounded-2xl p-6 relative max-h-[85vh] overflow-y-auto">
-      <button onclick="document.getElementById('privacyModal').classList.add('hidden')" class="absolute top-4 left-4 text-slate-400 hover:text-slate-700 font-bold text-lg">✕</button>
-      <h3 class="text-xl font-bold text-slate-900 mb-4">سياسة الخصوصية</h3>
-      <p class="text-sm text-slate-600 mb-3 leading-relaxed">
-        نحرص على حماية خصوصية عملائنا الكرام. لا نقوم بجمع أو مشاركة أي بيانات شخصية أو أرقام هواتف لأي طرف ثالث، وتُستخدم معلومات الاتصال فقط لغرض تنسيق موعد الخدمة المنزلية.
-      </p>
-      <p class="text-sm text-slate-600 leading-relaxed">
-        بالتواصل معنا عبر واتساب، فإنك توافق على استخدام بيانات التواصل لغرض حجز وتقديم الخدمة المطلوبة داخل مدينة الرياض.
-      </p>
-      <div class="mt-6 text-right">
-        <button onclick="document.getElementById('privacyModal').classList.add('hidden')" class="bg-slate-900 text-white text-sm font-bold px-5 py-2 rounded-xl">إغلاق</button>
-      </div>
-    </div>
-  </div>
-
-</body>
-  </html>
-  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- باقة 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-slate-500 font-bold text-sm block mb-2">الباقة الفضية</span>
+            <h3 class="text-2xl font-black text-slate-900 mb-4">جلسة 60 دقيقة</h3>
+            <div class="mb-6 pb-6 border-b border-slate-100">
+              <span class="text-xs text-slate-500">استفسر عن سعر العرض عبر واتساب</span>
+            </div>
+            <ul class="space-y-3.5 text-sm text-slate-600 mb-8">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-600"></i> مساج كامل للجسم (سويدي أو استرخائي)</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-e
